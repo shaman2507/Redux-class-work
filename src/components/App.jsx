@@ -1,3 +1,10 @@
+const appState = {
+  tasks: [],
+  filters: {
+    status: "all",
+  },
+};
+
 export const App = () => {
   return (
     <div
