@@ -1,23 +1,25 @@
-const appState = {
-  tasks: [],
-  filters: {
-    status: "all",
-  },
-};
+
+
+// const appState = {
+//   tasks: [],
+//   filters: {
+//     status: "all",
+//   },
+// };
+
+import { TaskList } from "./TaskList/TaskList";
+
+// // Імпортуємо хук
+// import { useSelector } from "react-redux";
+// const MyComponent = () => {
+//   // Отримуємо необхідну частину стану
+//   const value = useSelector(state => state.some.value);
+// };
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <TaskList />
     </div>
   );
 };
